@@ -349,12 +349,11 @@ class Grapher extends GrapherHook
                     'cachetime' => $this->cacheTime
                 ));
             }
-            $imghtml = '<div style="min-height: %spx;"><img src="%s%s" alt="%s" width="%spx" height="%spx" class="' .
+            $imghtml = '<div style="min-height: %spx;"><img src="%s" alt="%s" width="%spx" height="%spx" class="' .
                 $imgClass . '" /></div>';
             $previewHtml = sprintf(
                 $imghtml,
                 $this->height,
-                $this->getView()->serverUrl(),
                 $this->pngUrl,
                 $serviceName,
                 $this->width,
